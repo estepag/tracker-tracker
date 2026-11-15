@@ -82,6 +82,7 @@ describe("AddTrackerDialog join date visibility", () => {
     ["ggn", "GazelleGames"],
     ["iptorrents", "IPTorrents"],
     ["yggreborn", "YggReborn"],
+    ["crazyspirits", "CrazySpirits"],
     ["gazelle with enrichment", "Orpheus"],
   ] as const
 
