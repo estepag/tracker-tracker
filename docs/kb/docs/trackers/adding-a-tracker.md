@@ -94,6 +94,12 @@ Click the **+** button next to "Trackers" in the sidebar, or go to `/trackers/ne
     | --------------- | ------------ |
     | RetroToon World | RTW          |
 
+=== "CrazySpirits"
+
+    | Name         | Abbreviation |
+    | ------------ | ------------ |
+    | CrazySpirits | CS           |
+
 === "YggReborn"
 
     | Name      | Abbreviation |
@@ -282,6 +288,29 @@ Location varies by platform:
 
     !!! danger "Do not select and copy the Cookie value directly"
         Firefox (and some Chromium browsers) truncate long header values in the display, replacing the end with `…`. Copying the selection gets the truncated version with the ellipsis embedded, which fails with a "Tracker test failed" error. Always use **right-click → Copy Value**.
+
+=== "CrazySpirits"
+
+    CrazySpirits' API is a Torznab search feed with no account figures, so Tracker Tracker reads your stats from your logged-in session instead.
+
+    1. Open [crazyspirits.com](https://crazyspirits.com) in your browser and log in
+    2. Open DevTools (F12 or Cmd+Option+I)
+    3. Go to the **Network** tab
+    4. Refresh the page
+    5. Click any request to `crazyspirits.com`
+    6. Find the `Cookie` header in **Request Headers**
+    7. **Right-click** the Cookie header and select **Copy Value**
+
+    Paste it into the Add Tracker dialog. The User-Agent gets captured automatically, so add or update CrazySpirits from the same browser you are logged in with.
+
+    !!! info "The passkey will not work here"
+        The passkey on the Crazy Cool page authenticates `feed.php`, which only searches torrents. No CrazySpirits endpoint returns user stats. Cookies are the only way in.
+
+    !!! warning "Cookie expiration"
+        Session cookies expire when you log out or after a long idle period. When polling fails with "Session expired," log back in and re-copy the cookie string.
+
+    !!! danger "Do not select and copy the Cookie value directly"
+        Firefox (and some Chromium browsers) truncate long header values in the display, replacing the end with `…`. Always use **right-click → Copy Value**.
 
 === "YggReborn"
 

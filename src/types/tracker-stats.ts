@@ -289,6 +289,14 @@ export interface YggrebornPlatformMeta {
   verifiedUploads?: number
 }
 
+/** Figures from a CrazySpirits profile page that fit no TrackerStats field. */
+export interface CrazyspiritsPlatformMeta {
+  /** The "Torrents partagés" row: torrents the member has uploaded. */
+  uploadedTorrents?: number
+  /** Invitations held, from the sidebar's "Vous avez N invitations" link. */
+  invites?: number
+}
+
 /** Union of all platform-specific metadata types */
 export type PlatformMeta =
   | GGnPlatformMeta
@@ -304,6 +312,7 @@ export type PlatformMeta =
   | C411PlatformMeta
   | AnimeBytesPlatformMeta
   | YggrebornPlatformMeta
+  | CrazyspiritsPlatformMeta
 
 /** Maps platformType string → the corresponding PlatformMeta variant */
 export interface PlatformMetaMap {
@@ -320,6 +329,7 @@ export interface PlatformMetaMap {
   c411: C411PlatformMeta
   animebytes: AnimeBytesPlatformMeta
   yggreborn: YggrebornPlatformMeta
+  crazyspirits: CrazyspiritsPlatformMeta
 }
 
 /**
