@@ -20,6 +20,7 @@ export * from "./cathoderaytube"
 export * from "./cinemageddon"
 export * from "./cinemaz"
 export * from "./concertos"
+export * from "./crazyspirits"
 export * from "./darkpeers"
 export * from "./digitalcore"
 export * from "./dreadvault"
@@ -84,6 +85,7 @@ import { cathoderaytube } from "./cathoderaytube"
 import { cinemageddon } from "./cinemageddon"
 import { cinemaz } from "./cinemaz"
 import { concertos } from "./concertos"
+import { crazyspirits } from "./crazyspirits"
 import { darkpeers } from "./darkpeers"
 import { digitalcore } from "./digitalcore"
 import { dreadvault } from "./dreadvault"
@@ -149,6 +151,7 @@ export const ALL_TRACKERS: TrackerRegistryEntry[] = [
   cinemageddon,
   cinemaz,
   concertos,
+  crazyspirits,
   darkpeers,
   digitalcore,
   dreadvault,

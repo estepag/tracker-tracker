@@ -11,6 +11,7 @@ import { AnimeBytesAdapter } from "./adapters/animebytes"
 import { AvistazAdapter } from "./adapters/avistaz"
 import { BtnAdapter } from "./adapters/btn"
 import { C411Adapter } from "./adapters/c411"
+import { CrazyspiritsAdapter } from "./adapters/crazyspirits"
 import { DigitalCoreAdapter } from "./adapters/digitalcore"
 import { FilelistAdapter } from "./adapters/filelist"
 import { GazelleAdapter } from "./adapters/gazelle"
@@ -32,6 +33,7 @@ const adapters: Record<string, TrackerAdapter> = {
   avistaz: new AvistazAdapter(),
   btn: new BtnAdapter(),
   c411: new C411Adapter(),
+  crazyspirits: new CrazyspiritsAdapter(),
   digitalcore: new DigitalCoreAdapter(),
   filelist: new FilelistAdapter(),
   gazelle: new GazelleAdapter(),

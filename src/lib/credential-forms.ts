@@ -318,6 +318,32 @@ export const CREDENTIAL_FORMS = {
       },
     },
   },
+  crazyspirits: {
+    kind: "cookies",
+    example: "uid=12345; pass=abc123def456",
+    extraCookieNames: ["uid", "pass"],
+    hidesJoinDate: true,
+    dialog: {
+      secret: {
+        label: "Browser Cookies",
+        tooltip:
+          "CrazySpirits' passkey only searches torrents, so stats are read from your logged-in session. Open DevTools (F12) → Network → any request to the site → copy the full Cookie header value.",
+        docs: true,
+        placeholder: "uid=12345; pass=abc123def456...",
+        rows: 3,
+      },
+    },
+    sheet: {
+      secret: {
+        label: "Browser Cookies",
+        tooltip:
+          "Open DevTools (F12) → Network → any request to CrazySpirits → copy the full Cookie header value.",
+        docs: true,
+        placeholder: "uid=12345; pass=abc123def456...",
+        rows: 3,
+      },
+    },
+  },
 
   torrentleech: {
     kind: "login",
